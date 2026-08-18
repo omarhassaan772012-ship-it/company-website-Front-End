@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 import AosProvider from '@/components/AosProvider';
 
 export const metadata = {
-  title: "Vortex-Labs",
+  title: "Veliquix Studio",
   description: "agency company",
   
 };

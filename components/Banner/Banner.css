@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    padding: 120px 0 120px 80px;
+    padding: 90px 0 120px 80px;
     font-size: 42px;
     line-height: 1.2;
 }
@@ -82,15 +82,15 @@
 
 .badge-wrapper {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
- z-index: 999; /* عشان يفضل ظاهر فوق كل العناصر */
-  width: 140px;
-  height: 140px;
+ z-index: 999;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto; /* يزقها يمين */
+  margin-left: auto;
 }
 
 .circle-text {
@@ -124,7 +124,7 @@
 @media (max-width: 480px) {
     .banner{
         font-size: 30px;
-        padding: 120px 0 120px 40px;
+        padding: 80px 0 120px 25px;
     }
 
     .hero-title1 {

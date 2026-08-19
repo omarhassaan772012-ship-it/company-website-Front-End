@@ -1,35 +1,29 @@
-.banner{
-    background-color: rgb(163, 163, 150);
+.banner {
+    background-color: #a3a396;
     padding: 20px 0 20px 20px;
-    font-size: x-large;
+    font-size: clamp(1.3rem, 3.5vw, 2.5rem); 
+    line-height: 1.2;
 }
 
-.hero-title{
+.hero-title,
+.hero-title2,
+.hero-title3 {
     width: fit-content;
+    max-width: 100%;
+    word-break: break-word;
 }
 
-.hero-title:hover{
+.hero-title:hover,
+.hero-title2:hover,
+.hero-title3:hover {
     font-style: italic;
 }
 
-.hero-title2{
+.hero-title2 {
     background-color: black;
     color: white;
-    width: fit-content;
-    padding-bottom: 4px;
+    padding: 4px 8px;
     margin-top: 4px;
     margin-bottom: 2px;
-}
-
-.hero-title2:hover{
-    font-style: italic;
-}
-
-.hero-title3{
-    width: fit-content;
-}
-
-.hero-title3:hover{
-    font-style: italic;
 }
 

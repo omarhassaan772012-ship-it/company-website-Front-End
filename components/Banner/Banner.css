@@ -1,41 +1,134 @@
 .banner {
-  background-color: #a3a3a3;
-  padding: 20px;
+    position: relative;
+    padding: 120px 0 120px 80px;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.object1{
+    display: flex;
+    align-items: center; /* بيخلي النقطة والنص على نفس الخط العمودي */
+    gap: 8px;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+    border: 1px solid rgb(186, 184, 184);
+    border-radius: 20px;
+    width: fit-content;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p1{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: black;
+
+}
+
+.p2{
+    font-size: 14px;
+}
+
+.object2{
+    margin: 20px 0px 20px 0px;
 }
 
 .hero-title,
 .hero-title2,
-.hero-title3 {
-  font-size: clamp(1.1rem, 5.5vw, 2.5rem);
-  line-height: 1.25;
-  margin: 0;
-  display: table;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 100%;
+.hero-title3,
+.hero-title4 {
+    /* width: -webkit-fit-content;
+    width: -moz-fit-content; */
+    width: fit-content;
+    max-width: 100%;
+    word-break: break-word;
+    font-weight: 450;
 }
 
 .hero-title:hover,
+.hero-title1:hover,
 .hero-title2:hover,
-.hero-title3:hover {
-  font-style: italic;
+.hero-title4:hover {
+    font-style: italic;
+}
+
+.hero-title1 {
+    display: flex;
+    align-items: center;
+    width: fit-content;
 }
 
 .hero-title2 {
-  background-color: black;
-  color: white;
-  padding: 4px 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  white-space: nowrap; /* يمنع نزول الكلمتين تحت بعض ويخلي الصندوق الأسود على مقاس السطر بالظبط */
+    background-color: black;
+    color: white;
+    padding: 4px 6px;
+    margin-bottom: -1px;
+}
+
+.hero-title3 {
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+}
+
+.object3{
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.badge-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+ z-index: 999; /* عشان يفضل ظاهر فوق كل العناصر */
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* يزقها يمين */
+}
+
+.circle-text {
+  animation: rotateText 12s linear infinite;
+}
+
+.center-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.badge-wrapper:hover .center-arrow {
+  transform: scale(1.1) rotate(45deg);
+}
+
+@keyframes rotateText {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @media (max-width: 480px) {
-  .banner {
-    padding: 16px;
-  }
-  .hero-title2 {
-    padding: 3px 8px;
-  }
+    .banner{
+        font-size: 30px;
+        padding: 120px 0 120px 40px;
+    }
+
+    .hero-title1 {
+    display: block;
+}
+
 }

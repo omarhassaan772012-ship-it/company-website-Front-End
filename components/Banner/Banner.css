@@ -1,13 +1,16 @@
 .banner {
-    background-color: #a3a396;
+    background-color: #a3a3a3; /* رمادي نقي متوازن بدون أي اصفرار أو اخضرار */
     padding: 20px 0 20px 20px;
-    font-size: clamp(1.3rem, 3.5vw, 2.5rem); 
+    font-size: clamp(1.3rem, 3.5vw, 2.5rem);
     line-height: 1.2;
 }
 
 .hero-title,
 .hero-title2,
 .hero-title3 {
+  display: table; /* الحل الأضمن والأشمل 100% للموبايل لضبط العرض على قد الكلام بالضبط */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     max-width: 100%;
     word-break: break-word;
@@ -26,4 +29,3 @@
     margin-top: 4px;
     margin-bottom: 2px;
 }
-

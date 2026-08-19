@@ -1,0 +1,35 @@
+.banner{
+    background-color: rgb(163, 163, 150);
+    padding: 20px 0 20px 20px;
+    font-size: x-large;
+}
+
+.hero-title{
+    width: fit-content;
+}
+
+.hero-title:hover{
+    font-style: italic;
+}
+
+.hero-title2{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.hero-title2:hover{
+    font-style: italic;
+}
+
+.hero-title3{
+    width: fit-content;
+}
+
+.hero-title3:hover{
+    font-style: italic;
+}
+

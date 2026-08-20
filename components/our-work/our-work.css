@@ -18,6 +18,37 @@
 	font-size: 1.05rem;
 }
 
+.service-filters {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 28px;
+}
+
+.service-filter {
+	border: 2px solid #111;
+	/* border-radius: 999px; */
+	padding: 9px 18px;
+	background: #fff;
+	color: #111;
+	cursor: pointer;
+	font: inherit;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.service-filter-container{
+	display: contents;
+}
+
+.service-filter:hover,
+.service-filter.active {
+	background: #111;
+	color: #fff;
+}
+
 .work-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

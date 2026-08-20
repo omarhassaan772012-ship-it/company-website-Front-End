@@ -17,7 +17,7 @@ function OurWork() {
 
     async function fetchArticles() {
       try {
-        const response = await fetch("https://website-back-end.vercel.app/api/articles");
+        const response = await fetch("/api/articles");
 
         if (!response.ok) {
           throw new Error("Unable to load projects");
@@ -107,25 +107,26 @@ function OurWork() {
           <p className="work-status">No projects found for this service.</p>
         )}
         {!isLoading && !error && displayedArticles.map((article, index) => (
-            <div className="card" key={article._id}>
-          <article
-            className="work-card"
-            data-aos="fade-left"
-            data-aos-delay={300 + index * 150}
-          >
-            {article.image && (
-              <img
-                className="work-card-image"
-                src={article.image}
-                alt={article.title || "Project"}
-              />
-            )}
-            <div className="work-card-content">
-              {article.Type && <span className="work-card-type">{article.Type}</span>}
-              <h3>{article.title}</h3>
-              {/* {article.body && <p>{article.body}</p>} */}
-            </div>
-          </article>
+          <div className="card" key={article._id}>
+            <Link className="work-card-link" href={`/project/${article._id}`}>
+              <article
+                className="work-card"
+                data-aos="fade-left"
+                data-aos-delay={300 + index * 150}
+              >
+                {(article.image || article.imae) && (
+                  <img
+                    className="work-card-image"
+                    src={article.image || article.imae}
+                    alt={article.title || "Project"}
+                  />
+                )}
+                <div className="work-card-content">
+                  {article.Type && <span className="work-card-type">{article.Type}</span>}
+                  <h3>{article.title}</h3>
+                </div>
+              </article>
+            </Link>
           </div>
         ))}
       </div>

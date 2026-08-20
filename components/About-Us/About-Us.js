@@ -15,7 +15,7 @@ function AboutUs() {
     impactful experiences that help businesses thrive in the digital world.</p>
     </div>
 
-    <button className="about-us-button">See More <div className="arrow">↗</div> </button>
+    <Link href={"/aboutus"}><button className="about-us-button">See More <div className="arrow">↗</div> </button></Link>
 
     </div>
 );

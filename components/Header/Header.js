@@ -10,10 +10,10 @@ function Header() {
     const pathname = usePathname();
 
     const ishome = pathname === "/"
-    const isabout = pathname === "/about/"
-    const iscontact = pathname === "/contact/"
-    const isservices = pathname === "/services/"
-    const isourwork = pathname === "/our-work/"
+    const isabout = pathname === "/aboutus"
+    const iscontact = pathname === "/contact"
+    const isservices = pathname === "/services"
+    const isourwork = pathname === "/our-work"
 
     return(
         <header>
@@ -26,30 +26,30 @@ function Header() {
             <div className="Header-Links">
 
 
-            {usePathname() === "/" && <Link href={"#"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>}
-            {usePathname() === "/" && <Link href={"#"} className={isservices ? 'unique-link' : 'links'}>Services</Link>}
-            {usePathname() === "/" && <Link href={"#"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
-            {usePathname() === "/" && <Link href={"#"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
+            {pathname === "/" && <Link href={"/our-work"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>}
+            {pathname === "/" && <Link href={"/services"} className={isservices ? 'unique-link' : 'links'}>Services</Link>}
+            {pathname === "/" && <Link href={"/contact"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
+            {pathname === "/" && <Link href={"/aboutus"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
 
-            {usePathname() === "/about/" && <Link href={"#"} className={ishome ? 'unique-link' : 'links'}>Home</Link>} 
-            {usePathname() === "/about/" && <Link href={"#"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>} 
-            {usePathname() === "/about/" && <Link href={"#"} className={isservices ? 'unique-link' : 'links'}>Services</Link>} 
-            {usePathname() === "/about/" &&  <Link href={"#"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
+            {pathname === "/aboutus" && <Link href={"/"} className={ishome ? 'unique-link' : 'links'}>Home</Link>} 
+            {pathname === "/aboutus" && <Link href={"/our-work"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>} 
+            {pathname === "/aboutus" && <Link href={"/services"} className={isservices ? 'unique-link' : 'links'}>Services</Link>} 
+            {pathname === "/aboutus" &&  <Link href={"/contact"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
 
-            {usePathname() === "/contact/" && <Link href={"#"} className={ishome ? 'unique-link' : 'links'}>Home</Link>}
-            {usePathname() === "/contact/" && <Link href={"#"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>}
-            {usePathname() === "/contact/" && <Link href={"#"} className={isservices ? 'unique-link' : 'links'}>Services</Link>}
-            {usePathname() === "/contact/" && <Link href={"#"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
+            {pathname === "/contact" && <Link href={"/"} className={ishome ? 'unique-link' : 'links'}>Home</Link>}
+            {pathname === "/contact" && <Link href={"/our-work"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>}
+            {pathname === "/contact" && <Link href={"/services"} className={isservices ? 'unique-link' : 'links'}>Services</Link>}
+            {pathname === "/contact" && <Link href={"/aboutus"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
 
-            {usePathname() === "/our-work/" && <Link href={"#"} className={ishome ? 'unique-link' : 'links'}>Home</Link>}
-            {usePathname() === "/our-work/" && <Link href={"#"} className={isservices ? 'unique-link' : 'links'}>Services</Link>}
-            {usePathname() === "/our-work/" && <Link href={"#"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
-            {usePathname() === "/our-work/" && <Link href={"#"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
+            {pathname === "/our-work" && <Link href={"/"} className={ishome ? 'unique-link' : 'links'}>Home</Link>}
+            {pathname === "/our-work" && <Link href={"/services"} className={isservices ? 'unique-link' : 'links'}>Services</Link>}
+            {pathname === "/our-work" && <Link href={"/contact"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
+            {pathname === "/our-work" && <Link href={"/aboutus"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
 
-            {usePathname() === "/services/" && <Link href={"#"} className={ishome ? 'unique-link' : 'links'}>Home</Link>}
-            {usePathname() === "/services/" && <Link href={"#"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>}
-            {usePathname() === "/services/" && <Link href={"#"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
-            {usePathname() === "/services/" && <Link href={"#"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
+            {pathname === "/services" && <Link href={"/"} className={ishome ? 'unique-link' : 'links'}>Home</Link>}
+            {pathname === "/services" && <Link href={"/our-work"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>}
+            {pathname === "/services" && <Link href={"/contact"} className={iscontact ? 'unique-link' : 'links'}>Contact Us</Link>}
+            {pathname === "/services" && <Link href={"/aboutus"} className={isabout ? 'unique-link' : 'links'}>About Us</Link>}
 
             {/* <Link href={"#"} className={isourwork ? 'unique-link' : 'links'}>Our Work</Link>
             <Link href={"#"} className={isservices ? 'unique-link' : 'links'}>Services</Link>
@@ -66,30 +66,30 @@ function Header() {
             </label>
 
             <nav className="nav-menu">
-                {usePathname() === "/" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
-                {usePathname() === "/" && <Link href={"#"} className="nav-menu-link">Services</Link>}
-                {usePathname() === "/" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
-                {usePathname() === "/" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
+                {pathname === "/" && <Link href={"#"} className="nav-menu-link">Services</Link>}
+                {pathname === "/" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
 
-                {usePathname() === "/about/" && <Link href={"#"} className="nav-menu-link">Home</Link>} 
-                {usePathname() === "/about/" && <Link href={"#"} className="nav-menu-link">Our Work</Link>} 
-                {usePathname() === "/about/" && <Link href={"#"} className="nav-menu-link">Services</Link>} 
-                {usePathname() === "/about/" &&  <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/aboutus" && <Link href={"#"} className="nav-menu-link">Home</Link>} 
+                {pathname === "/aboutus" && <Link href={"#"} className="nav-menu-link">Our Work</Link>} 
+                {pathname === "/aboutus" && <Link href={"#"} className="nav-menu-link">Services</Link>} 
+                {pathname === "/aboutus" &&  <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
 
-                {usePathname() === "/contact/" && <Link href={"#"} className="nav-menu-link">Home</Link>}
-                {usePathname() === "/contact/" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
-                {usePathname() === "/contact/" && <Link href={"#"} className="nav-menu-link">Services</Link>}
-                {usePathname() === "/contact/" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">Home</Link>}
+                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
+                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">Services</Link>}
+                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
 
-                {usePathname() === "/our-work/" && <Link href={"#"} className="nav-menu-link">Home</Link>}
-                {usePathname() === "/our-work/" && <Link href={"#"} className="nav-menu-link">Services</Link>}
-                {usePathname() === "/our-work/" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
-                {usePathname() === "/our-work/" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">Home</Link>}
+                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">Services</Link>}
+                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
 
-                {usePathname() === "/services/" && <Link href={"#"} className="nav-menu-link">Home</Link>}
-                {usePathname() === "/services/" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
-                {usePathname() === "/services/" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
-                {usePathname() === "/services/" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">Home</Link>}
+                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
+                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
 
             </nav>
 

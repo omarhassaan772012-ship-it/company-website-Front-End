@@ -16,10 +16,11 @@ const Footer = () => {
             <div className="linkColumn">
               <h4 className="linkTitle">Company</h4>
               <ul className="linkList">
-                <li><Link href={"#about"}>About Us</Link></li>
-                <li><Link href={"#services"}>Services</Link></li>
-                <li><Link href={"#work"}>Our Work</Link></li>
-                <li><Link href={"#contact"}>Contact</Link></li>
+                <li><Link href={"/"}>Home</Link></li>
+                <li><Link href={"/aboutus"}>About Us</Link></li>
+                <li><Link href={"/services"}>Services</Link></li>
+                <li><Link href={"/our-work"}>Our Work</Link></li>
+                <li><Link href={"/contact"}>Contact</Link></li>
               </ul>
             </div>
 

@@ -66,30 +66,30 @@ function Header() {
             </label>
 
             <nav className="nav-menu">
-                {pathname === "/" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
-                {pathname === "/" && <Link href={"#"} className="nav-menu-link">Services</Link>}
-                {pathname === "/" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
-                {pathname === "/" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/" && <Link href="/our-work" className="nav-menu-link">Our Work</Link>}
+                {pathname === "/" && <Link href="/services" className="nav-menu-link">Services</Link>}
+                {pathname === "/" && <Link href="/contact" className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/" && <Link href="/aboutus" className="nav-menu-link">About Us</Link>}
 
-                {pathname === "/aboutus" && <Link href={"#"} className="nav-menu-link">Home</Link>} 
-                {pathname === "/aboutus" && <Link href={"#"} className="nav-menu-link">Our Work</Link>} 
-                {pathname === "/aboutus" && <Link href={"#"} className="nav-menu-link">Services</Link>} 
-                {pathname === "/aboutus" &&  <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/aboutus" && <Link href="/" className="nav-menu-link">Home</Link>} 
+                {pathname === "/aboutus" && <Link href="/our-work" className="nav-menu-link">Our Work</Link>} 
+                {pathname === "/aboutus" && <Link href="/services" className="nav-menu-link">Services</Link>} 
+                {pathname === "/aboutus" &&  <Link href="/contact" className="nav-menu-link">Contact Us</Link>}
 
-                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">Home</Link>}
-                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
-                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">Services</Link>}
-                {pathname === "/contact" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/contact" && <Link href="/" className="nav-menu-link">Home</Link>}
+                {pathname === "/contact" && <Link href="/our-work" className="nav-menu-link">Our Work</Link>}
+                {pathname === "/contact" && <Link href="/services" className="nav-menu-link">Services</Link>}
+                {pathname === "/contact" && <Link href="/aboutus" className="nav-menu-link">About Us</Link>}
 
-                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">Home</Link>}
-                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">Services</Link>}
-                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
-                {pathname === "/our-work" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/our-work" && <Link href="/" className="nav-menu-link">Home</Link>}
+                {pathname === "/our-work" && <Link href="/services" className="nav-menu-link">Services</Link>}
+                {pathname === "/our-work" && <Link href="/contact" className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/our-work" && <Link href="/aboutus" className="nav-menu-link">About Us</Link>}
 
-                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">Home</Link>}
-                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">Our Work</Link>}
-                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">Contact Us</Link>}
-                {pathname === "/services" && <Link href={"#"} className="nav-menu-link">About Us</Link>}
+                {pathname === "/services" && <Link href="/" className="nav-menu-link">Home</Link>}
+                {pathname === "/services" && <Link href="/our-work" className="nav-menu-link">Our Work</Link>}
+                {pathname === "/services" && <Link href="/contact" className="nav-menu-link">Contact Us</Link>}
+                {pathname === "/services" && <Link href="/aboutus" className="nav-menu-link">About Us</Link>}
 
             </nav>
 

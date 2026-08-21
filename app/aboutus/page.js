@@ -71,7 +71,7 @@ export default function AboutUsPage() {
 				<section className="about-cta">
 					<p className="about-eyebrow">Have a project in mind?</p>
 					<h2>Let&apos;s make something meaningful.</h2>
-					<Link className="about-cta-link" href="https://wa.me+201279799010">
+					<Link className="about-cta-link" href="https://wa.me/+201279799010">
 						Start a conversation <span aria-hidden="true">↗</span>
 					</Link>
 				</section>

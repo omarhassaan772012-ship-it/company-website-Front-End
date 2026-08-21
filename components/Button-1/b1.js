@@ -1,5 +1,5 @@
 'use client'
-
+import Link from "next/link";
 import "./b1.css"
 
 function B1() {
@@ -15,7 +15,7 @@ function B1() {
         </text>
         </svg>
     </div>
-    <div className="center-arrow">↗</div>
+    <Link href="/our-work" className="center-arrow">↗</Link>
 </div>
     )
 }

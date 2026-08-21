@@ -51,6 +51,14 @@ header{
   border-bottom: 2px solid transparent;
 }
 
+.service-button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
 
 .unique-link{
   margin-right: 30px;

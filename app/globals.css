@@ -49,6 +49,16 @@ body {
   margin: 0;
 }
 
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus, button:focus,
+a:focus-visible, button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;

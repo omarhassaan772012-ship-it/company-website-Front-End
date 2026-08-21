@@ -1,0 +1,89 @@
+.services-page {
+    background: #f1f0ea;
+    color: #111;
+    padding: 100px max(24px, 7vw) 112px;
+}
+
+.services-heading {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    align-items: end;
+    gap: 32px;
+    max-width: 1240px;
+    margin: 0 auto 58px;
+}
+
+.services-kicker,
+.service-tag {
+    color: #63734c;
+    font: 700 0.72rem/1.2 Arial, sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.services-heading h2 {
+    font-size: clamp(2.4rem, 5vw, 5.2rem);
+    font-weight: 400;
+    line-height: 0.95;
+    max-width: 560px;
+    text-align: center;
+}
+
+.services-intro {
+    color: #60615d;
+    font: 1rem/1.6 Arial, sans-serif;
+    max-width: 260px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    max-width: 1240px;
+    margin: 0 auto;
+    background: #c8c9c0;
+    border-top: 1px solid #c8c9c0;
+    border-left: 1px solid #c8c9c0;
+}
+
+.service-item {
+    position: relative;
+    min-height: 265px;
+    padding: 24px;
+    background: #f1f0ea;
+    transition: background 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.service-item:hover {
+    z-index: 1;
+    background: #111;
+    color: #f1f0ea;
+    transform: translateY(-6px);
+}
+
+.service-item:hover .service-tag,
+.service-item:hover p {
+    color: #c5e86c;
+}
+
+.service-number { color: #9a9b92; font: 0.85rem/1 Arial, sans-serif; }
+.service-tag { float: right; }
+.service-item h3 { max-width: 240px; margin-top: 58px; font-size: clamp(1.5rem, 2.4vw, 2.2rem); font-weight: 400; line-height: 1; }
+.service-item p { max-width: 260px; margin-top: 14px; color: #686963; font: 0.92rem/1.5 Arial, sans-serif; }
+.service-arrow { position: absolute; right: 24px; bottom: 20px; font: 1.7rem/1 Arial, sans-serif; }
+
+.services-cta { display: block; width: fit-content; margin: 42px auto 0; border-bottom: 1px solid #111; padding-bottom: 7px; font: 700 0.78rem/1 Arial, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+.services-cta span { margin-left: 18px; font-size: 1.1rem; }
+
+@media (max-width: 800px) {
+    .services-page { padding: 72px 20px 80px; }
+    .services-heading { display: block; margin-bottom: 40px; }
+    .services-heading h2 { margin: 22px 0; }
+    .services-intro { max-width: 420px; }
+    .services-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+    .services-list { grid-template-columns: 1fr; }
+    .service-item { min-height: 220px; }
+}

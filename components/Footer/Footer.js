@@ -53,7 +53,7 @@ const Footer = () => {
               href="mailto:hello@veliquix.com"
               className="email"
             >
-              hello@veliquix.com
+              veliquixstudio@gmail.com
             </a>
           </div>
         </div>

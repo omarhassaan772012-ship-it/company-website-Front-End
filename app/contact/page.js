@@ -21,11 +21,11 @@ export default function ContactPage() {
                     <div className="contact-details">
                         <div>
                             <span>Email</span>
-                            <a href="mailto:hello@veliquix.com">hello@veliquix.com</a>
+                            <a href="mailto:veliquixstudio@gmail.com">veliquixstudio@gmail.com</a>
                         </div>
                         <div>
                             <span>Based in</span>
-                            <p>Cairo, Egypt<br />Working worldwide</p>
+                            <p>Dakahlia, Egypt<br />Working worldwide</p>
                         </div>
                     </div>
                 </section>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                             <textarea name="message" placeholder="A few words about your project, timeline, and goals..." rows="4" required />
                         </label>
                         <div className="form-submit-row">
-                            <p>We usually reply within 1–2 business days.</p>
+                            <p>We usually reply within 1-6 business hours.</p>
                             <button type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
                         </div>
                     </form>

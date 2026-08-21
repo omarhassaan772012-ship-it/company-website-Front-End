@@ -24,7 +24,7 @@ function Header() {
     return(
         <header>
             <div>
-            <Image src={logo} alt="logo" className="logo"/>
+            <Link href="/"><Image src={logo} alt="logo" className="logo"/></Link>
             
 
             </div>

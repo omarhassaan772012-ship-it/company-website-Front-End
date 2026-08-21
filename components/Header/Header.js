@@ -73,7 +73,7 @@ function Header() {
 
             <nav className="nav-menu">
                 {pathname === "/" && <Link href="/our-work" className="nav-menu-link">Our Work</Link>}
-                {pathname === "/" && <button type="button" className="nav-menu-link service-button" onClick={handleServicesClick}>Services</button>}
+                {pathname === "/" && <Link href="/services" className="nav-menu-link service-button">Services</Link>}
                 {pathname === "/" && <Link href="/contact" className="nav-menu-link">Contact Us</Link>}
                 {pathname === "/" && <Link href="/aboutus" className="nav-menu-link">About Us</Link>}
 
